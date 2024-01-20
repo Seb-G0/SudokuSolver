@@ -13,7 +13,6 @@ grid = [
     [8, 0, 0, 9, 0, 1, 0, 0, 5],
     [0, 5, 0, 0, 4, 0, 0, 7, 0]
 ]
-#func from SudokuSolver.py
 def prettyprint(a):
     for i in range(9):
         for j in range(9):
@@ -57,5 +56,6 @@ def solve(row, col):
                 return True
         grid[row][col] = 0
     return False
+    
 solve(0, 0)
 prettyprint(grid)
